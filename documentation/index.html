@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="eng">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Analogue | Digital Agency Site template</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+</head>
+<body data-spy="scroll" data-target=".scrollspy">
+<!--header start from here-->
+<header class="site-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 col-sm-7">			
+				<div id="bannr_text">
+					<span class="site-logo mt5"><a href="https://www.psthemes.co" target="_blank"><img src="images/ps-logo-2.png" alt="PSTHEMES" class="custom-logo"/></a></span>
+					<h1>Analogue HTML template documentation</h1>
+				</div>
+			</div><!--/col-->
+		</div><!--/row-->
+	</div><!--/container-->
+</header>
+<!---header end here-->
+<section class="document">
+			
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 scrollspy">
+        <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+  			<li class="mt2"><a href="#installation">Installation</a></li>
+  			<li><a href="#included">What's Included</a></li>
+  			<li><a href="#html_structure">HTML Page Structure</a></li>
+  			<li class="nav-item">
+                <a class="nav-link" href="#components">Components</a>
+                <ul class="nav flex-sm-column small ml-md-3 ml-1 hidden-sm-down">
+                    <li class="nav-item"><a class="nav-link" href="#preloader">Preloader</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#favicon">Favicon</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#logo">Logo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#navigation">Navigation</a></li>
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#basic_styling">Basic Styling</a>
+                <ul class="nav flex-sm-column small ml-md-3 ml-1 hidden-sm-down">
+                    <li class="nav-item"><a class="nav-link" href="#color_scheme">Color Scheme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bg_image">Background Image</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#font">Font</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#buttons">Button</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#page_layout">Grid</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#elements">Elements</a>
+                <ul class="nav flex-sm-column small ml-md-3 ml-1 hidden-sm-down">
+                	<li class="nav-item"><a class="nav-link" href="#text_rotator">Banner Text Rotator</a></li>
+                	<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                	<li class="nav-item"><a class="nav-link" href="#team_member">Team</a></li>
+                	<li class="nav-item"><a class="nav-link" href="#contact_form">Contact Form</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#social_media">Social Media</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="#template_sections">Template Sections</a></li>
+            <li><a href="#helper">Helper Classes</a></li>
+            <li class="mt2"><a href="#index-video"><strong> Video Version </strong></a></li>
+  			<a href="mailto:pixelspeaks@gmail.com" class="btn-alpha btn-beta mt2 mb2 ps-btn">Need Support ?</a>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <section id="installation" style="padding: 0 0 30px;">
+      <h2> Installation </h2>
+      <p>Unzip the downloaded files to the local disk on your computer. Inside the extracted folder there will be a folder with documentation and a folder "assets" containing all source files. Updload the source files to your server via FTP. </p>
+     </section>
+        <section id="included">
+          <h2></span> What's Included</h2>
+          <div class="components-tree">
+            <ul>
+              	<li class="is-folder open">
+                <span>assets</span><br>
+	                <ul>
+				            <ul>
+				                <li class="is-folder"><span>css</span><i>Containing all css files</i></li>
+				                <li class="is-folder"><span>images</span><i>Here is a place to put your media files like logo, images, etc.</i></li>
+				                <li class="is-folder"><span>js</span><i>Containing all js files</i></li> 
+				                <li class="is-folder"><span>sass</span><i>Containing all scss files</i></li> 
+				                <li class="is-file"><span>index.html</span> <i>Main HTML file</i></li>
+                        <li class="is-file"><span>index-video.html</span> <i>Video Version Mail HTML file</i></li>
+                        <li class="is-file"><span>contact-mail.php</span> <i>Form Submission PHP file</i></li>
+					            <li class="is-file"><span>.htaccess</span> <i>Configuration file</i></li>
+					            <li class="is-file"><span>favicon.icon</span> <i>Favicon icon</i></li>
+					            <li class="is-file"><span>gulpfile.js</span> <i>Gulpfile</i></li>
+					            <li class="is-file"><span>package.json</span> <i>Package JSON file</i></li>
+					        </ul>
+				        </li>
+				    </ul>
+              	</li>
+              
+            </ul>
+          </div>
+        </section><!--/Included-->
+        <section id="html_structure">
+			<h3>HTML page sturture</h3>
+  <pre>
+  &lt;html&gt;
+      &lt;head&gt;
+         [Page meta, page css files, page title, favicon etc]
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;div class="preloader"&gt;
+           [Preloader content]
+        &lt;/div&gt;
+        &lt;header&gt;
+           [Logo, Main banner content]
+        &lt;/header&gt;
+        &lt;section id="banner" class=""&gt;
+          [Banner content]
+        &lt;/section&gt;
+        &lt;nav class="site-menu " id="fixed-nav"&gt; 
+          [Navbar content]
+        &lt;/nav&gt;
+        &lt;main class="ps-main-content"&gt;
+        &lt;section id="" class=""&gt;
+          [Section content]
+        &lt;/section&gt;
+        &lt;/main&gt; 
+        &lt;footer id="colophon" class="site-footer"&gt;
+          [Footer content]
+        &lt;/footer&gt;
+          [Js files content]
+      &lt;/body&gt;
+  &lt;/html&gt;
+          </pre>
+
+        </section><!--/page scturcure-->
+	<section id="components"><h2>Components</h2>
+		<section id="preloader">
+			<h3>Preloader</h3>
+           	<p>Page Loading Transitions are enabled by default. If you wish to disable the page loading transition you can simply delete below section.</p>
+ <pre>
+ &lt;div class="preloader"&gt;
+   [Loader Content]
+ &lt;/div&gt;
+</pre>
+        </section><!--/preloader-->
+        <section id="favicon">
+			<h3>Favicon</h3>
+            <p>Favicon is an icon associated with URL that is displayed at various places such as in a browser’s address bar or next to the site name in a bookmark list.
+            Following code is for favicon, to change just place your <code>favicon.ico</code> file in root path</p>
+            <div class="code_preview">
+              &lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+            </div>
+        </section><!--/favicon-->
+        <section id="logo">
+			<h3>Logo</h3>
+			<p>To change logo, place your logo file both light and dark in <code>images</code> folder and find <code>site-logo</code> class in <code>index.html</code> file. Replace the current logo image name with yours.</p>
+	<pre>
+    &lt;a href="index.html" class="custom-logo-link" rel="home"&gt;
+        &lt;img src="images/logo-light.png" alt="Analogue" class="custom-logo light-logo"/&gt;
+        &lt;img src="images/logo-dark.png" alt="Analogue" class="custom-logo dark-logo"/&gt;
+    &lt;/a&gt;
+  </pre>
+  <p><code>logo-dark.png</code>  appear when header fixed on top </p>
+        </section><!--/logo-->
+        <section id="navigation">
+			<h3>Navigation</h3>
+			<p>Follwing section is for the Navbar menu, Find class <code>.site-menu</code> and make required changes in Navbar</p>
+    <pre>
+    &lt;nav id="fixed-nav" class="site-menu"&gt;
+        [Navbar Content]
+    &lt;/nav&gt;
+    </pre>
+        </section><!--/navigation-->
+	</section><!--/Components-->
+        
+	<section id="basic_styling"><h2>Basic Styling</h2>
+        <section id="color_scheme">
+			<h3>Color Scheme</h3>
+			<p>Analogue template uses sass variable, so changing color scheme is much easier. You just need to add your color at one place and it will apply everywhere.</p>
+			<p>Go to <code>_variables-site.scss</code> file in <code>sass</code> folder, check for the variable name and replace the HEX color code.</p>
+        </section><!--/color-scheme-->
+
+         <section id="bg_image">
+			<h3>Background Image</h3>
+			<p>Analogue template added background images path in index.html file using inline css rules.</p>
+			<p>To change background image go to the respective section and change the image name.</p>
+			<p>Please make sure your new image is placed in <code>images</code> folder </p>
+        </section><!--/bg_image-->
+
+        <section id="font">
+			<h3>Font</h3>
+			<p>Analogue template uses Google WebFont, there are thousands of fonts available, you can select fonts as per your need from <a href="https://fonts.google.com/" target="_blank"> google fonts library</a></p>
+			<p>Find the current added font link inside the<code>head</code> tag.</p>
+			<div class="code_preview">
+				&lt;!---- this is example link that added in head tag----&gt;<br />
+				&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:500,700,800%7CWork+Sans:400,500,700" media="all"&gt;
+				<br /><br />
+			</div>	
+			<p>In Order to change the fonts, you neeed to change the above link with your new google fonts link. and change <code>font-family</code> in <code>_variables-site.scss</code> in sass folder</p>
+			<p>You can learn more about how to use google fonts <a href="https://developers.google.com/fonts/docs/getting_started" target="_blank"> here </a></p>
+        </section><!--/font family-->
+
+        <section id="buttons">
+			<h3>Buttons</h3>
+			<p>Analogue template uses <code>.dark_btn</code> class name for define button, In order to change the button style, go to <code>_variables-sites.scss</code> inside sass folder and make required changes in variables color. </p>
+			
+        </section><!--/buttons-->
+        <section id="page_layout">
+                  <h3>Page Layout</h3>
+                  <p>We have followed Bootstrap 4 standard layout</p>
+  <pre>
+    &lt;div class="container"&gt;
+       &lt;div class="row"&gt;
+          &lt;div class="col-lg-X"&gt;
+            .......
+          &lt;/div&gt;&lt;!--/col--&gt;
+        &lt;/div&gt;&lt;!--/row--&gt;
+    &lt;/div&gt;&lt;!--/container--&gt;
+  </pre>
+                  <p><code>&lt;div class="col-lg-X"&gt;</code> Define how many columns you want in row, Where X is value from 1 to 12.</p>
+                  <h4 class="mt3">Some Example layout for Page column </h4>
+                   	<div class="row">
+	                    <div class="col-lg-3">
+	                      	<div class="code_preview">col-lg-3</div>
+	                    </div>
+                        <div class="col-lg-3">
+                      		<div class="code_preview">col-lg-3</div>
+                        </div>
+                        <div class="col-lg-3">
+	                      	<div class="code_preview">col-lg-3</div>
+	                    </div>
+                        <div class="col-lg-3">
+                      		<div class="code_preview">col-lg-3</div>
+                        </div>
+                	</div><!--/row-->
+
+                	<div class="row">
+	                    <div class="col-lg-4">
+	                      	<div class="code_preview">col-lg-4</div>
+	                    </div>
+                        <div class="col-lg-4">
+                      		<div class="code_preview">col-lg-4</div>
+                        </div>
+                        <div class="col-lg-4">
+                      		<div class="code_preview">col-lg-4</div>
+                        </div>
+                	</div><!--/row-->
+
+                	<div class="row">
+	                    <div class="col-lg-6">
+	                      	<div class="code_preview">col-lg-6</div>
+	                    </div>
+                        <div class="col-lg-6">
+                      		<div class="code_preview">col-lg-6</div>
+                        </div>
+                	</div><!--/row-->
+                	<div class="row">
+	                    <div class="col-lg-12">
+	                      	<div class="code_preview">col-lg-12</div>
+	                    </div>
+                	</div><!--/row-->
+                
+        </section><!--/page_layout-->
+	</section><!--basic styling-->
+	<section id="elements"><h2>Elements</h2>
+
+	<section id="text_rotator">
+  <h3>Banner Text Rotator</h3>
+  <p>Analogue templates uses simple jquery text rotator.</p>
+  <p>To change rotating text go to <code>index.html</code> file and find the following code</p>
+  <pre>
+  &lt;div class="col-lg-8 banner-text"&gt;
+      &lt;h1 class="text-rotator">We design and build products for 
+        &lt;span class="rotate"&gt;Startups., Enterprises., Healthcares., Mobility., Retails., Logistics., Education., Automotive.&lt;/span&gt;
+      &lt;/h1&gt;
+  &lt;/div&gt; 
+  </pre>
+
+  <p>Rotating text are placed inside in <code>rotate</code> class, place your text by comma seperated here.</p>
+  <p>You can also easily increase or decrease text rotation speed by simply changing speed in <code>main.js</code> file in js folder.</p>
+  <p>Find the following code in main.js file</p>
+  <pre>
+  $(".text-rotator .rotate").textrotator({
+          speed: 2500
+  });
+  </pre>
+</section><!--/banner text rotator-->
+
+<section id="portfolio">
+  <h3>Portfolio</h3>
+   <p>Inside the portfolio section following code demostrate the individual portfolio detail.</p>
+   <p>In order to add more portfolio items, just copy and paste below code and make required changes.</p>
+   <pre>
+    &lt;!--- <code>Portfolio item start from here</code>--&gt;
+        &lt;div class="portfolio-item  item col-md-4 ux-ui-design "&gt;
+          &lt;div class="portfolio-inner"&gt;
+            &lt;!--- <code>Portfolio image</code>--&gt;
+            &lt;img class="portfolio_img img-fluid" src="images/starbucks.jpg" alt="Starbucks" /&gt;
+            &lt;div class="portfolio-content d-flex justify-content-center align-items-center"&gt;
+              &lt;!--- <code>Portfolio title</code>--&gt;
+              &lt;span class="port-title"&gt;Starbucks&lt;/span&gt;
+              &lt;a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>
+              &lt;!--- <code>Icon that showing above the title in pop up</code>--&gt;
+              &lt;img src="images/apple.jpg"  class="port_logo d-none" alt="Starbucks" &gt;             
+            &lt;/div&gt;
+            &lt;!--- <code>Portfolio category title</code>--&gt;
+            &lt;bdi>UX/UI Design | Web Development&lt;/bdi&gt;
+            &lt;div class="d-none port_content"&gt;
+              &lt;!--- <code>Portfolio Description</code>--&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+              &lt;ul&gt;
+                &lt;li&gt;Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.&lt;/li&gt;
+                &lt;li&gt;Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/li&gt;
+                &lt;li&gt;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;!--- <code>Portfolio item end from here</code>--&gt;
+   </pre>
+ </section><!--/portfolio-->
+
+ <section id="team_member">
+  <h3>Team</h3>
+   <p>Inside the about section following code demostrate the individual team member detail.</p>
+   <p>In order to add more team members just copy and paste below code and make required changes.</p>
+   <pre>
+    &lt;!--- <code> team info start </code>--&gt;
+    &lt;div class="col-md-3 col-sm-4  mb5 our-team"&gt;
+        &lt;div class="team-inner"&gt;
+          &lt;ul class="social"&gt;
+          &lt;!--- <code> add your social media link here </code>--&gt;
+          &lt;li&gt;&lt;a href="javascript:;"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="javascript:;"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;             
+        &lt;div class="team_img"&gt; &lt;!--- <code> Team member image </code>--&gt;
+            &lt;img src="images/team-8.jpg" alt="Team Member" /&gt;
+        &lt;/div&gt;                    
+            &lt;div class="team-content text-center"&gt;
+              &lt;h3 class="title"&gt; John Doe &lt;/h3&gt; &lt;!--- <code> Name of team member </code>--&gt;
+                &lt;span &gt;UX/UI Designer&lt;/span&gt;  &lt;!--- <code> Designation </code>--&gt;
+              &lt;a href="#expert_modal" class="team_modal_link link-item" data-toggle="modal"&gt;&lt;/a&gt;
+              &lt;div class="d-none"&gt; &lt;!--- <code> Desciption </code>--&gt;
+                &lt;p&gt; Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--- <code>team info end</code>--&gt;
+   </pre>
+ </section>
+
+
+
+
+<section id="contact_form">
+	<h3> Contact Form</h3>
+	<p>To connect the contact form with your email account please enter your email address into the <code> contact-mail.php</code> file under <code> $recipient = "youremail@gmail.com";</code> and subject can be changed from <code> $subject = "Your Subject $name";</code></p>
+<pre>
+	$recipient = "youremail@gmail.com"; /*----- Add your email address here------*/
+        $subject = "Your Subject $name"; /*------ Add your email subject here------*/
+</pre>
+<p>Additionally you can changes success / failure alert messages in same file.</p>
+</section><!--/contact form-->
+
+<section id="social_media">
+  <h3>Social Media</h3>
+  <p>Below is code demostrate the social media section</p>
+  <pre>
+   &lt;ul class="footer-social"&gt;
+
+      &lt;li&gt;&lt;a href="<code>javascript:;</code>"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href="<code>javascript:;</code>"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href="<code>javascript:;</code>"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+
+    &lt;/ul&gt;
+  </pre>
+
+  <p>Add your social media links at the place of <code>javascript:;</code></p>
+  <p>Analogue template uses <a href="http://fontawesome.io/icons/" target="_blank">font awesome</a> icons, to change/add social icons go to font awesome and select your icons.</p>
+</section><!--/social media-->      
+       
+	</section><!--elements-->
+
+	<section id="template_sections">
+			<h3>Template Sections</h3>
+			<p>Analogue template have many other sections, to make changes in sections go to respective section and make required changes. HTML is properly commented and arranged section wise, so we sure you will be easily make necessary changes</p>
+   	</section><!--/template_sections-->
+	
+    <section id="helper">
+            <h3>Utilities Classes</h3>
+            <p>Analogue template uses standard bootstrap 4 utilities classes like for margin, padding etc. You can learn more about utilities classes <a href="https://getbootstrap.com/docs/4.1/utilities/borders/" target="_blank"> here </a>and use them as per your need</p>
+              
+          </section><!--/helper classes-->
+          <section id="index-video">
+	<h2>Video Version</h2>
+    <p>All the files for the Video and Image backgorund version are common. To use Video Backgorund Template as default then just rename the <code>index-video.html</code> to <code>index.html</code> </p>
+</section>
+
+      </div><!--/col-9-->
+    </div><!--/row-->
+  </div><!--/container-->
+</section>
+ 
+
+
+
+<footer class="site-footer text-center">
+	<p class="copy">All rights reserved &copy;<strong> PS themes </strong></p>			
+	
+</footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>	
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript">
+	$('#nav').affix({
+    offset: {     
+      top: $('#nav').offset().top,
+      bottom: ($('footer').outerHeight(true) + $('.application').outerHeight(true)) + 200
+    }
+});
+</script>
+</body>
+</html>

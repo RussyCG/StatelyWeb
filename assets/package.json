@@ -1,0 +1,35 @@
+{
+  "name": "Analogue",
+  "version": "1.0.0",
+  "description": "Analogue - One page wordpress theme",
+  "main": "",
+  "author": "PS Themes",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "critical": "^0.8.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-imageoptim": "^1.0.8",
+    "gulp-include": "^1.1.1",
+    "gulp-jshint": "^1.12.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-watch": "^4.3.11",
+    "gulp-zip": "^3.2.0",
+    "jshint-stylish": "^1.0.2",
+    "popper.js": "^1.12.9"
+  },
+  "dependencies": {
+    "gulp-install": "^1.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-module": "0.0.6",
+    "gulp-update": "0.0.2",
+    "node": "^10.0.0"
+  }
+}

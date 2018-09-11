@@ -1,0 +1,92 @@
+.site-header {
+	position:absolute;
+	width:100%;
+	background:transparent;
+    top: 15px;
+	height:3.8em;
+    color: #fff;
+    padding: 10px 0;
+    z-index:5;
+    overflow: hidden;   
+}
+.custom-logo-link {
+	width: 5.5em;
+    height: 1.3em;
+     display: inline-block;
+    img {
+		width:auto;
+        height:100%;
+        max-height: 1.5em;
+        object-fit:cover;
+	}
+}
+.site-logo a{
+    color: $primary__color;
+    font-family: $font__main;
+        text-transform: lowercase;
+    font-weight: 900;
+    font-size: 1.9em;
+    line-height: 1;
+}
+.site-description{
+    color: #fff;
+    font-size: .9em;
+}
+.dark-logo{
+    display: none;
+}
+.site-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    border-bottom:1px solid #DDD;
+    .dark-logo{
+    display: block;
+    }
+    .light-logo{
+    display: none;
+    }
+}
+
+.site-logo.is-hidden.slide-in {
+    left: 0px;
+}
+.site-logo{
+    transition: left ease .3s;
+}
+.animate_btn.is-hidden.slide-in {
+    right: 0px;
+}
+.animate_btn, .site-logo{
+    position: relative;
+}
+.site-logo.is-hidden {
+    left: -50%;
+}
+.animate_btn.is-hidden {
+    right: -50%;
+}
+.site-logo.slide-in .site-description{
+    color: $color__text-main;
+}
+p.site-title a {
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+
+@media(max-width: 767px){
+.custom-logo-link {
+    width: 130px;
+    display: block;
+}
+.site-header.fixed{
+    height: 50px;
+}
+a.animate_btn {
+        padding: 8px 15px;
+}
+}

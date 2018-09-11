@@ -1,0 +1,182 @@
+<section id="portfolio" class="ps-section burger border-bottom">
+            <div class="container">
+               <div class="row flex-item-stretch">
+                  <!-- row start -->
+                  <div class="col-lg-4">
+                     <div class="page-head mb-5">
+                        <span class="page-caption">Portfolio</span>
+                        <h2 class="mt-3">We make things you&#039;ll love</h2>
+                        <p>Stately was founded on the premise that having a purpose gives you power. In a world of possibility, it is not what you say or sell, but what you stand for and at Stately, we advise and guide brand development, strategy and continuation through a purpose-driven mindset.</p>
+                        <span class="portfolio_tabs_toogle d-md-none" data-active="all"></span>
+                        <ul class="portfolio-tabs clearfix" >
+                           <li class="filter active" data-filter="*"> All </li>
+                           <li class="filter" data-filter=".ux-ui-design">UX/UI Design</li>
+						   <li class="filter" data-filter=".development">Brand Development</li>
+                           <li class="filter" data-filter=".mobile-apps">Exhibition Stands</li>
+                           <li class="filter" data-filter=".iot">Retail</li>
+						   <li class="filter" data-filter=".mobile-apps">Restaurants</li>
+                           <li class="filter" data-filter=".iot">Residential</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!--/col-4-->
+                  <div class="col-lg-8">
+                     <div class="portfolio-list align-items-center d-flex flex-wrap">
+                        <div class="portfolio-item  item col-md-4 col-sm-6 ux-ui-design ">
+                           <div class="portfolio-inner">
+                              <div class="portfolio_img" style="background-image: url(images/portfolio-image.png);"></div>
+                              <div class="portfolio-content d-flex justify-content-center align-items-center">
+                                 <span class="port-title">MS</span>
+                                 <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>
+                                 <img src="images/port-logo.png" class="port_logo d-none" alt="Starbucks" >							
+                              </div>
+                              <div class="d-none port_tag">UX/UI Design</div><!-- portfolio tag -->
+                              <div class="d-none port_content">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 <ul>
+                                    <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                    <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/portfolio-item-->
+                        <div class="portfolio-item  item col-md-4 col-sm-6 development ">
+                           <div class="portfolio-inner">
+                              <div class="portfolio_img" style="background-image: url(images/portfolio-image.png);"></div>
+                              <div class="portfolio-content d-flex justify-content-center align-items-center">
+                                 <span class="port-title">Fashion Live Style</span>
+                                 <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>
+                                 <img src="images/port-logo.png"  class="port_logo d-none" alt="Starbucks" >							
+                              </div>
+                              <div class="d-none port_tag">Development </div><!-- portfolio tag -->
+                              <div class="d-none port_content">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 <ul>
+                                    <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                    <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/portfolio-item-->
+                        <div class="portfolio-item  item col-md-4 col-sm-6 iot ">
+                           <div class="portfolio-inner">
+                              <div class="portfolio_img" style="background-image: url(images/portfolio-image.png);"></div>
+                              <div class="portfolio-content d-flex justify-content-center align-items-center">
+                                 <span class="port-title">Handmade With Love</span>
+                                 <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                                 <img src="images/port-logo.png"  class="port_logo d-none" alt="Starbucks" >							
+                              </div>
+                              <div class="d-none port_tag">Internet Of Things</div><!-- portfolio tag -->
+                              <div class="d-none port_content">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 <ul>
+                                    <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                    <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/portfolio-item-->
+                        <div class="portfolio-item  item col-md-4 col-sm-6 mobile-apps ">
+                           <div class="portfolio-inner">
+                              <div class="portfolio_img" style="background-image: url(images/portfolio-image.png);"></div>
+                              <div class="portfolio-content d-flex justify-content-center align-items-center">
+                                 <span class="port-title">Are Studio</span>
+                                 <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                                 <img src="images/port-logo.png"  class="port_logo d-none" alt="Starbucks" >							
+                              </div>
+                              <div class="d-none port_tag">Mobile App</div><!-- portfolio tag -->
+                              <div class="d-none port_content">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 <ul>
+                                    <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                    <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/portfolio-item-->
+                        <div class="portfolio-item  item col-md-4 col-sm-6 ux-ui-design ">
+                           <div class="portfolio-inner">
+                              <div class="portfolio_img" style="background-image: url(images/portfolio-image.png);"></div>
+                              <div class="portfolio-content d-flex justify-content-center align-items-center">
+                                 <span class="port-title">Pure</span>
+                                 <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                                 <img src="images/port-logo.png"  class="port_logo d-none" alt="Starbucks" >					
+                              </div>
+                              <div class="d-none port_tag">UX/UI Design </div><!-- portfolio tag -->
+                              <div class="d-none port_content">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 <ul>
+                                    <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                    <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/portfolio-item-->
+                        <div class="portfolio-item  item col-md-4 col-sm-6 development ">
+                           <div class="portfolio-inner">
+                              <div class="portfolio_img" style="background-image: url(images/portfolio-image.png);"></div>
+                              <div class="portfolio-content d-flex justify-content-center align-items-center">
+                                 <span class="port-title">Holli</span>
+                                 <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                                 <img src="images/port-logo.png"  class="port_logo d-none" alt="Starbucks" >					
+                              </div>
+                              <div class="d-none port_tag">Development</div><!-- portfolio tag -->
+                              <div class="d-none port_content">
+                                 <p> TG CONTENT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                 <ul>
+                                    <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                                    <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                    <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/portfolio-item-->
+                     </div>
+                     <!--/portfolio-list-->
+                  </div>
+                  <!--/col-8-->
+               </div>
+               <!-- /row -->
+            </div>
+            <!-- /container -->
+            <!-- Portfolio Modal HTML -->
+            <div  class="modal port_modal" id="portfolioModal"  role="dialog" >
+               <a href="javascript:;" class="dismiss-item1 modal_close_btn" data-dismiss="modal" aria-label="Close"></a>
+               <div class="row align-items-stretch port-popup slideshow flex-column flex-sm-row">
+                  <!-- row start -->
+                  <div class="col-lg-6 p-0">
+                     <div id="port_img" style="background-image: url(images/starbucks.jpg);"  ></div>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                     <div class="d-flex f justify-content-stretch h-100">
+                        <div class="content flex-column justify-content-center d-flex  ">
+                           <img src="images/no-image.png" id="port_modal_logo"  alt="Starbucks" >
+                           <h3 class="mt-3 text-capitalize">Starbucks</h3>
+                           <small class="text-muted">UX/UI Design</small>
+                           <div class="mt-3" id="port-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              <ul>
+                                 <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                 <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Portfolio Modal HTML END-->
+         </section>
+         <!-- /Protfolio--> 

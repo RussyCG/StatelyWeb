@@ -1,0 +1,81 @@
+.form-contact {
+	.form-control{
+        border: .02em solid #ccc;
+    background-color: #ccc;
+    border-radius: 0;
+    padding: .64em;
+    box-shadow: none;
+        font-size: 1em;
+        &:focus{
+        	background-color: #fff;
+        	outline: none !important;
+        	box-shadow: none;
+        }
+	}
+	.form-group{
+		margin-bottom: 1.6em;
+	}
+    textarea{
+        height: 7.4em;
+    }
+}
+.contact-address {
+    p {
+    margin-top: .5em;
+    margin-bottom: 0;
+    font-size:0.9em;
+    }
+    a {
+    color:#000;
+     border-bottom: .02em solid #000;   
+        &:hover {color:#0085A1; border-color:#0085A1}
+    }
+}
+.notification {
+    color: #666;
+    font-weight: 600;
+    position: absolute;
+    padding: 1em 1em 1em 3.6em;
+    z-index: 2;
+    top: 90%;
+    transition: transform ease .3s;
+    transform: rotate3d(1, 0, 0, 90deg);
+    perspective: 1000px;
+    box-shadow: 1px 4px 13px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dddddd96;
+    border-radius: .04em;
+    background-color: #f9f9f9;
+    &:after{
+    content: "";
+    width: 2em;
+    height: 2em;
+    background-position: center;
+    position: absolute;
+    left: 1em;
+    background-size: cover;
+    top: calc(50% - 1em);
+    }
+}
+.notification.success, .notification.error{
+    transform: rotate(0deg); 
+    display: block;
+}
+.notification.success:after{
+        background-image: url(../images/check.svg);
+}
+.notification.error:after{
+        background-image: url(../images/sad.svg);
+}
+@media(min-width: 767px){
+    #contact .form-group:last-child {
+    margin-bottom: 0;
+    }
+}
+@media(max-width: 767px){
+    #contact form{
+        margin-bottom: -1.6em;
+    }
+    .form-contact .form-control{
+        font-size: inherit;
+    }
+}

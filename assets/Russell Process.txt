@@ -1,0 +1,109 @@
+<div id="approach" class="ps-section darkbg burger" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 page-head process-header ">
+						<h2>Our Approach</h2>
+						<h3>We Amplify the Good</h3>
+						<p>Place, people and purpose at the centre of everything we do. Our dynamic global team not only has a foothold in some of the largest markets, from Johannesburg to London and Dubai, but we are a group of mission-minded millennials. We know that what matters most to companies is survival in a competitive world, coupled with the continual need to evolve. We understand their passion and great love for their brands and that they believe strongly in their own unique set of needs. This is why Stately never uses a one-size-fits-all approach. Each company is different, every entrepreneur has their own strengths and we are passionate about building a brand message that creates a significant impact on public consciousness.</p>
+					</div>
+				</div>
+				
+				<div class="row" id="approach-items">
+					<div class="col-md-3 approach-item" onclick="ShowProcess('Discuss')">
+						<img src="images/team.png" alt="Discuss" />
+						<p>Discuss</p>
+						
+						<div class="item-no">
+							<p>1</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 approach-item" onclick="ShowProcess('Concept')">
+						<img src="images/team.png" alt="Discuss" />
+						<p>Creative Concept</p>
+						
+						<div class="item-no non-first-item-no">
+							<p>2</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 approach-item" onclick="ShowProcess('Production')">
+						<img src="images/team.png" alt="Discuss" />
+						<p>Production</p>
+						
+						<div class="item-no non-first-item-no">
+							<p>3</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 approach-item" onclick="ShowProcess('Client')">
+						<img src="images/team.png" alt="Discuss" />
+						<p>Happy Client</p>
+						
+						<div class="item-no non-first-item-no">
+							<p>4</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row" id="approach-information">
+					<div class="col-lg-12 approach-info">
+					<div class="container-fluid">
+						<div class="row" id="Discuss">
+							<div class="col-md-4 approach-info-header">
+								<h2>Discussing the bespoke solution</h2>
+							</div>
+							
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+						</div>
+						
+						<div class="row hidden" id="Concept">
+							<div class="col-md-4 approach-info-header">
+								<h2>Creating a creative concept</h2>
+							</div>
+							
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+						</div>
+						
+						<div class="row hidden" id="Production">
+							<div class="col-md-4 approach-info-header">
+								<h2>Implementation</h2>
+							</div>
+							
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+						</div>
+						
+						<div class="row hidden" id="Client">
+							<div class="col-md-4 approach-info-header">
+								<h2>Happy client</h2>
+							</div>
+							
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+							<div class="col-md-4 approach-info-content">
+								<p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Donec ut finibus urna, nec aliquet arcu. Praesent a dapibus dui libero ornare nec.</p>
+							</div>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+			</div>
+            
+         </div>

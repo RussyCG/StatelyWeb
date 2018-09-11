@@ -1,0 +1,664 @@
+/*====================Common Style=================================*/
+
+body {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    font-family: 'Nunito', sans-serif;
+
+    background-color: #FFF; 
+
+    color: #333;
+
+
+
+}
+
+h1, h2, h3, h4, h5 {
+
+	font-family: 'Nunito', sans-serif;
+
+	font-weight: 600;
+
+}
+
+
+
+a:hover {
+
+	text-decoration: none;
+
+}
+
+a:focus {
+
+	text-decoration: none;
+
+	outline: none;
+
+}
+
+.mt2 {
+
+	margin-top: 20px;
+
+}
+
+.mt3 {
+
+	margin-top: 30px;
+
+}
+
+.mt5 {
+
+	margin-top: 50px;
+
+}
+.mb2 {
+  margin-bottom: 20px;
+}
+.burger {
+
+	padding: 75px 0 100px;
+
+}
+
+.gutter {
+
+	padding: 0 100px;
+
+}
+
+.border-top {
+
+	border-top: 1px solid #DDD
+
+}
+
+.no-border { 
+
+	border: none !important; 
+
+}
+
+.darkbg {
+
+	background-color: #EEF3F9;
+
+}
+
+.themebg {
+
+	background: #1242a2;
+
+}
+
+.white-text {
+
+	color: #FFF;
+
+}
+
+.sub-title {
+
+	font-size: 16px;
+
+}
+
+.padded {
+
+	padding: 50px;
+
+}
+
+.btn-alpha {
+
+    background-color: #00d664;
+
+    border: medium none;
+
+    border-radius: 33px;
+
+    color: #fff;
+
+    display: inline-block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    min-width: 125px;
+
+    padding: 14px 38px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    z-index: 999;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.btn-alpha:hover, .btn-alpha:focus {
+
+	background-color: #00d630;
+
+	color:#FFF;
+
+}
+
+.btn-beta {
+
+  background-color: #AAA;
+  color: #FFF !important;
+
+}
+
+.btn-beta:hover, .btn-beta:focus {
+
+  background-color: #CCC;
+
+}
+
+/*====================Banner=================================*/
+
+.site-header {
+
+	min-height: 350px;
+
+	background: #f3f3f3;
+
+	color:#333;
+
+}
+
+
+.site-header p {
+
+	font-size: 20px;
+
+	opacity: 0.8;
+
+}
+
+.site-logo {
+
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+    display: block;
+
+}
+
+.site-header h1 {
+
+	font-size: 42px;
+
+	line-height: 56px;
+
+}
+
+
+
+#ps-section-4{
+
+    margin-top: 1px;
+
+}
+
+
+
+/*====================Sticky Sidebar=================================*/
+
+
+
+section {
+
+  padding: 30px 0;
+
+  border-bottom: 1px solid #ccc;
+
+}
+.nav-item ul {
+    height: 0;
+    overflow: hidden;
+    transition: all ease .3s;
+}
+.nav-item.active ul {
+    height: auto;
+    overflow: visible;
+}
+
+
+#web-development,
+
+#mobile-development {
+
+  padding-bottom: 0;
+
+}
+
+
+
+section:last-child {
+
+  border-bottom: none;
+
+}
+
+
+
+.scrollspy ul {
+
+  padding: 0px 10px;
+
+}
+
+.nav {
+
+  background: #f3f3f3;
+
+}
+
+.nav > li > a {
+  padding: 5px 15px;
+}
+
+.nav a {
+
+  color: #333;
+
+}
+
+
+
+.nav li a:hover,
+
+.nav li a:focus {
+
+  background: #f9f9f9;
+
+}
+
+
+
+.nav .active {
+
+  font-weight: bold;
+
+  background: #f9f9f9;
+
+}
+
+
+
+.nav .nav li a {
+   font-size: 14px;
+   padding: 5px 25px;
+}
+
+
+
+.nav .active .nav {
+
+  display: block;
+
+}
+
+
+
+.nav .nav a {
+
+  font-weight: normal;
+
+  font-size: .85em;
+
+}
+
+
+
+.nav .nav span {
+
+  margin: 0 5px 0 2px;
+
+}
+
+
+
+.nav .nav .active a,
+
+.nav .nav .active:hover a,
+
+.nav .nav .active:focus a {
+
+  font-weight: bold;
+
+  padding-left: 30px;
+
+  border-left: 5px solid #e2e2e2;
+
+}
+
+
+
+.nav .nav .active span,
+
+.nav .nav .active:hover span,
+
+.nav .nav .active:focus span {
+
+  display: none;
+
+}
+
+
+
+.application {
+
+  border-top: 1px solid #c1e1ec;
+
+}
+
+
+
+.affix-top {
+
+  position: relative;
+
+}
+
+
+
+.affix {
+
+  top: 20px;
+
+}
+
+
+
+.affix, 
+
+.affix-bottom {
+
+    width: 213px;
+
+}
+
+
+
+.affix-bottom {
+
+  position: absolute;
+
+}
+
+
+
+
+
+@media (min-width:1200px) {
+
+  .affix, 
+
+  .affix-bottom {
+
+    width: 263px;
+
+  }
+
+}
+
+/*====================Overview=================================*/
+
+.overview {
+
+  padding: 0px;
+
+}
+
+.overview li {
+
+  list-style: none;
+
+  margin: 5px;
+
+}
+
+/*====================What's Included=================================*/
+
+
+
+.components-tree {
+
+    background-color: #fafafa;
+
+    margin: 24px 0;
+
+    padding: 20px 10px 10px;
+
+}
+
+.components-tree > ul {
+
+    display: block;
+
+}
+
+.components-tree ul {
+
+    display: block;
+
+    list-style: outside none none;
+
+    padding-left: 25px;
+
+}
+
+.components-tree li {
+
+    line-height: 24px;
+
+    padding: 4px 0;
+
+}
+
+.components-tree .is-folder.open > span::before {
+
+    content: "";
+
+}
+
+.components-tree .is-file > span::before {
+
+    color: #bec7d2;
+
+    content: "";
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-family: FontAwesome;
+
+    margin-right: 8px;
+
+    width: 18px;
+
+}
+
+.components-tree .is-folder > span::before {
+
+    color: #8b949e;
+
+    content: "";
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-family: FontAwesome;
+
+    margin-right: 8px;
+
+    width: 18px;
+
+}
+
+.components-tree .is-folder > span {
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-family: Montserrat,sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    min-width: 120px;
+
+}
+
+.components-tree .is-folder.open > ul {
+
+    display: block;
+
+}
+
+.components-tree i {
+
+    color: #b4b7b8;
+
+    cursor: default;
+
+    display: block;
+
+    font-size: 12px;
+
+    font-style: normal;
+
+    line-height: 20px;
+
+    margin-left: 24px;
+
+    transition: color 0.4s ease 0s;
+
+}
+
+
+
+/*====================Component=================================*/
+
+.code_preview {
+
+  background: #f6f6f6;
+
+  padding: 20px;
+
+  margin: 20px 0;
+
+}
+
+code {
+
+    background-color: #DDD !important;
+
+    color: #f4645f !important;
+
+    text-shadow: 0 1px #e2e2e2;
+
+}
+
+code, kbd {
+
+    font-size: 90% !important;
+
+    padding: 2px 4px !important;
+
+}
+
+.sub_nav {
+
+  background: #EEE;
+
+  padding: 20px;
+
+}
+
+.sub_nav li {
+
+    padding: 4px;
+
+    list-style:inside;
+
+}
+
+
+
+
+
+/*====================inside=================================*/
+
+.inside-block {
+
+	padding: 20px 20px 0;
+
+}
+
+.inside-block h4 {
+
+	margin-top: 30px;
+
+}
+
+
+
+
+
+/*====================Footer=================================*/
+
+.site-footer {
+
+	padding: 15px 0;
+
+}
+
+.social-icons {
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+.social-icons li {
+
+	list-style: none;
+
+	display: inline-block;
+
+	margin:10px;
+
+}
+
+
+.doc-box {
+  padding: 50px;
+  background-color: #ececec;
+}
+
+
+
+
+
+
+
+
+
+

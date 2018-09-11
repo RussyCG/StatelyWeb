@@ -1,0 +1,37 @@
+.service-list {
+    margin-bottom: -2em;
+}
+.service-item{
+	margin-bottom:2em;
+	&:last-child{
+		margin-bottom:0
+	}
+	.card {
+		border:none;
+		background:#F9FAFB;
+		padding:2em;
+	        min-height: 275px;
+		h3 {
+		font-size:1.25em;
+		}
+		.card-icon {
+	    width: 4em;
+		}
+	}
+}
+@media(max-width:767px){
+	.service-item{
+		&:last-child{
+			margin-bottom: 0;
+		}
+		.card{
+			padding: 20px;
+		}
+	}
+}
+
+@media(max-width:575px){
+	.service-list {
+    	margin-bottom: 0em;
+	}
+}
