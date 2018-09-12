@@ -590,16 +590,21 @@ span.cat-links a {
   overflow: hidden;
 }
 
+.site-header.align-items-center{
+	height: auto;
+}
+
 .custom-logo-link {
   width: 5.5em;
   height: 1.3em;
   display: inline-block;
 }
 .custom-logo-link img {
-  width: auto;
-  height: 100%;
-  max-height: 1.5em;
+  width: 100%;
+  height: auto;
+  /*max-height: 1.5em;*/
   object-fit: cover;
+  vertical-align: unset;
 }
 
 .site-logo a {
@@ -629,6 +634,7 @@ span.cat-links a {
   background-color: #fff;
   padding: 0;
   border-bottom: 1px solid #DDD;
+  height: 3.8em;
 }
 .site-header.fixed .dark-logo {
   display: block;
@@ -1010,7 +1016,10 @@ p.site-title a {
 }
 
 .service-item {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  /*overflow: hidden;*/
+  /*height: calc(33vh - 4em);*/
+  
 }
 .service-item:last-child {
   margin-bottom: 0;
@@ -1018,15 +1027,50 @@ p.site-title a {
 .service-item .card {
   border: none;
   background: #dbdee0;
-  padding: 2em;
-  min-height: 275px;
+  padding: 1em;
+  /*min-height: 275px;*/
   height: 100%;
+  cursor:  pointer;
 }
 .service-item .card h3 {
   font-size: 1.25em;
 }
 .service-item .card .card-icon {
   width: 4em;
+}
+
+#service-info{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #dbdee0;
+	position: absolute;
+	border-radius: 10px;
+	margin-left: 0.5em;
+}
+
+#service-info-inner{
+	margin: 0.5em;
+	border: 1px solid white;
+	border-radius: 20px;
+	width: calc(100% - 1em);
+	height: calc(100% - 1em);
+}
+
+#service-info-close{
+	position: absolute;
+	right: 20px;
+	cursor: pointer;
+}
+
+#service-info-close span{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.post p{
+	display: none;
 }
 
 @media (max-width: 767px) {

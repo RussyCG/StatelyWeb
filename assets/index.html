@@ -57,7 +57,7 @@
                   <div class="site-logo">
                      <!-- main-log -->
                      <a href="index.html" class="custom-logo-link" rel="home">
-                        <span class="custom-logo light-logo">STATELY</span><!-- light-logo-->
+                        <img class="light-logo" src="images/stately_logo.png" alt="Stately Logo" /><!-- light-logo-->
                         <span class="custom-logo dark-logo">STATELY</span><!-- Dark-logo-->
 						<!--<img src="images/logo-dark.png" alt="Analogue" class="custom-logo dark-logo"/>-->
 						
@@ -160,7 +160,7 @@
                   <div class="col-lg-8 service-list">
                      <div class="row">
                         <!-- row start -->
-                        <div class="col-sm-6 service-item">
+                        <div class="col-sm-6 service-item" onclick="ShowServiceInfo('service-ux')" id="service-ux">
                            <div class="card">
                               <div class="card-content">
                                  <div class="card-icon">
@@ -176,7 +176,7 @@
                            <!--/card-->
                         </div>
                         <!--/col-->     
-                        <div class="col-sm-6 service-item ">
+                        <div class="col-sm-6 service-item " onclick="ShowServiceInfo('service-brand')" id="service-brand">
                            <div class="card">
                               <div class="card-content">
                                  <div class="card-icon">
@@ -192,7 +192,7 @@
                            <!--/card-->
                         </div>
                         <!--/col-->      
-                        <div class="col-sm-6 service-item ">
+                        <div class="col-sm-6 service-item " onclick="ShowServiceInfo('service-exhibition')" id="service-exhibition">
                            <div class="card">
                               <div class="card-content">
                                  <div class="card-icon">
@@ -208,7 +208,7 @@
                            <!--/card-->
                         </div>
                         <!--/col-->     
-                        <div class="col-sm-6 service-item ">
+                        <div class="col-sm-6 service-item " onclick="ShowServiceInfo('service-retail')" id="service-retail">
                            <div class="card">
                               <div class="card-content">
                                  <div class="card-icon">
@@ -224,7 +224,7 @@
                            <!--/card-->
                         </div>
                         <!--/col-->    
-						<div class="col-sm-6 service-item " style="margin-bottom:0">
+						<div class="col-sm-6 service-item " style="margin-bottom:0" onclick="ShowServiceInfo('service-restaurants')" id="service-restaurants">
                            <div class="card">
                               <div class="card-content">
                                  <div class="card-icon">
@@ -240,7 +240,7 @@
                            <!--/card-->
                         </div>
                         <!--/col-->  
-						<div class="col-sm-6 service-item ">
+						<div class="col-sm-6 service-item " onclick="ShowServiceInfo('service-residential')" id="service-residential">
                            <div class="card">
                               <div class="card-content">
                                  <div class="card-icon">
@@ -257,11 +257,44 @@
                         </div>
                         <!--/col-->  						
                      </div>
-                     <!--/row-->
+					 <!--/row-->
+					 <div id="service-info" class="row" style="display: none;">
+					<div id="service-info-inner">
+						<div id="service-info-close" onclick="HideServiceInfo()">
+							<span>X</span>
+						</div>
+						
+						<div id="service-info-content">
+							<div id="service-info-title">
+							
+							</div>
+							
+							<div id="service-info-post">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+				var HideServiceInfo = function(){
+					$('#service-info').fadeOut();
+				};
+				
+				var ShowServiceInfo = function(idOfDiv){
+					$('#service-info').fadeIn();
+					
+					var div = document.getElementById(idOfDiv);
+					var title = div.getElementsByClassName('title')[0].innerHTML;
+					var post = div.getElementsByClassName('post')[0].innerHTML;
+					document.getElementById('service-info-title').innerHTML = title;
+					document.getElementById('service-info-post').innerHTML = post;
+				};
+				</script>
+               <!--/row-->
                   </div>
                   <!--/col-8-->        	
                </div>
-               <!--/row-->
+			   <!--/row-->
             </div>
             <!--/container-->
          </section>
