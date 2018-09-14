@@ -1416,6 +1416,20 @@ p.site-title a {
 /*--------------------------------------------------------------
 # Process
 --------------------------------------------------------------*/
+.our-approach .card {
+  border: none;
+  background: black;
+  color: white;
+  padding: 1em;
+  /*min-height: 275px;*/
+  height: 100%;
+  cursor:  pointer;
+}
+
+#ours:hover{
+  background: #ec008c !important;
+}
+
 .process-header{
 	text-align: center;
 }
