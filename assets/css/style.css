@@ -1416,16 +1416,31 @@ p.site-title a {
 /*--------------------------------------------------------------
 # Process
 --------------------------------------------------------------*/
-.our-approach .card {
+
+@media (max-width: 320px) {
+  .our-app.card  {
+        width: 90%;   
+       }
+  } 
+
+  #ours{
   border: none;
-  background: black;
+  background: black !important;
+  color: white;
+  padding: 1em;
+  cursor:  pointer;
+  white-space: nowrap;
+  margin-top: 10px;
+  }
+#ours::before{
+  border: none;
+  background: black !important;
   color: white;
   padding: 1em;
   /*min-height: 275px;*/
   height: 100%;
   cursor:  pointer;
 }
-
 #ours:hover{
   background: #ec008c !important;
 }
