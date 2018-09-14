@@ -225,6 +225,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+/*h1, h2, h3, h4, h5, h6 {
+  font-family:Lato;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: normal;
+}*/
 
 .has-top-margin {
   margin-top: 61px;
@@ -910,7 +916,6 @@ p.site-title a {
 /*----------------------Banner Text----------------------------*/
 .rotate{
   color:#ec008c;
-  margin-left: 300px;
 }
 /*-------------------------- Banner -video -------------------*/
 .homepage-hero-module {
