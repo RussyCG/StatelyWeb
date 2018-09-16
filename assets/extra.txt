@@ -1,0 +1,105 @@
+ <section id="approach" class="ps-section burger border-bottom">
+                <div class="container d-block d-sm-none"> <!-- Shown only on small/mobile devices -->
+                  
+                  <!-- Its a bit redundent but best way I know how to do with only html -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="page-head mb-5">
+                              <span class="page-caption">Our Approach</span>
+                              <h2 class="mt-3">We make things you&#039;ll love</h2>
+                              <p>Stately was founded on the premise that having a purpose gives you power. In a world of possibility, it is not what you say or sell, but what you stand for and at Stately, we advise and guide brand development, strategy and continuation through a purpose-driven mindset.</p>
+                            </div>
+                          </div>
+                      <div class="col-sm our-app" >
+                        <div class="card"id="ours"  >
+                          <div class="card-content">
+                            <h2>Research</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm our-app">
+                        <div class="card" id="ours" >
+                          <div class="card-content">
+                            <h2>Brainstorming</h2>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-sm our-app" style="line-height: 1;">
+                            <div class="card" id="ours"  >
+                              <div class="card-content">
+                                <h2>Incubation</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm our-app">
+                        <div class="card"  id="ours">
+                          <div class="card-content">
+                            <h2>Concept Designs</h2>
+                          </div>
+                        </div>
+                        <div class="card" id="ours" >
+                          <div class="card-content">
+                            <h2>Evaluation</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="container d-none d-sm-block"> <!-- Only hidden on small/mobile devices -->
+                    <div class="row">
+                        <div class="col-4">
+                          <div class="page-head mb-5">
+                            <span class="page-caption">Our Approach</span>
+                            <h2 class="mt-3">We make things you&#039;ll love</h2>
+                            <p>Stately was founded on the premise that having a purpose gives you power. In a world of possibility, it is not what you say or sell, but what you stand for and at Stately, we advise and guide brand development, strategy and continuation through a purpose-driven mindset.</p>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="row"> 
+                            <div class="col-6 our-app" >
+                              <div class="card"id="ours"  >
+                                <div class="card-content">
+                                  <h2>Research</h2>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6 our-app">
+                              <div class="card" id="ours" >
+                                <div class="card-content">
+                                  <h2>Brainstorming</h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6 our-app">
+                              <div class="card" id="ours"  >
+                                <div class="card-content">
+                                  <h2>Incubation</h2>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6 our-app">
+                              <div class="card"  id="ours">
+                                <div class="card-content">
+                                  <h2>Concept Designs</h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                          <div class="row">
+                            <div class="ml-auto col-6 mr-auto our-app">
+                              <div class="card" id="ours" >
+                                <div class="card-content">
+                                  <h2>Evaluation</h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                    </div>
+                </div>s
