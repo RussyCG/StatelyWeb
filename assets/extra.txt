@@ -1,7 +1,6 @@
  <section id="approach" class="ps-section burger border-bottom">
                 <div class="container d-block d-sm-none"> <!-- Shown only on small/mobile devices -->
                   
-                  <!-- Its a bit redundent but best way I know how to do with only html -->
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="page-head mb-5">
