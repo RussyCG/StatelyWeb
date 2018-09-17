@@ -1052,6 +1052,32 @@ p.site-title a {
   width: 4em;
 }
 
+#service-info-title{
+	text-align: center;
+}
+#service-info-title h2{
+	text-align: center;
+	font-size: 2em;
+	color: #0085a1;
+	margin-top: 2em;
+}
+
+#service-info-post{
+	margin-top: 0.5em;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#service-info-icon{
+}
+
+#service-info-icon img{
+	max-height: 250px;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
 #service-info{
 	top: 0;
 	left: 0;
@@ -1071,15 +1097,24 @@ p.site-title a {
 	height: calc(100% - 1em);
 }
 
+#service-info-content{
+	margin-top: 40px;
+}
+
 #service-info-close{
 	position: absolute;
 	right: 20px;
 	cursor: pointer;
+	z-index: 2;
 }
 
 #service-info-close span{
 	font-size: 2em;
 	font-weight: bold;
+}
+
+.card-content .row .title{
+	margin-top: 1.5em !important;
 }
 
 .post p{
