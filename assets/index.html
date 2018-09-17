@@ -734,13 +734,18 @@
          <!-- /Protfolio--> 
          <!-- /Gallery-->
 		 <script>
-	var RotateCarousel = function(){
-		$('.carousel').slick({
-			autoplay: true,
-			autoplaySpeed: 2000,
-			slidesToScroll: 1
-		});
-	};
+	// var RotateCarousel = function(){
+	// 	// $('.carousel').slick({
+	// 	// 	autoplay: true,
+	// 	// 	autoplaySpeed: 2000,
+	// 	// 	slidesToScroll: 4
+	// 	// });
+
+	// };
+  function RotateCarousel() {
+    $('#top-carousel').slick('slickPrev');
+    $('#bottom-carousel').slick('slickNext');
+  }
 	</script>
          <section id="clients" class="ps-section burger border-bottom">
             <div class="container">
@@ -762,7 +767,7 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-                      <div class="carousel top-carousel" style="width: 100%">
+                      <div id="top-carousel" class="carousel top-carousel" style="width: 100%">
                         <div class="clients-inner">
                           <div class="clients_img">
                             <img alt="Acer"  class=" mr-sm-3 media-object client-img" src="images/Clients/Acer Logo.png">
@@ -806,7 +811,7 @@
                       </div>
 					  </div>
 					  <div class="col-md-12">
-                      <div class="carousel bottom-carousel">
+                      <div id="bottom-carousel" class="carousel bottom-carousel">
                       <div class="clients-inner">
                           <div class="clients_img">
                             <img alt="Dyson" class=" mr-sm-3 media-object client-img" src="images/Clients/Dyson Logo.png">
@@ -967,7 +972,36 @@
 	  
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.carousel').slick({
+        // If you want to use rtl option you will need to create seperate objects
+
+        // Top-Carousel
+        $('#top-carousel').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 4,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        // Bottom-Carousel
+        $('#bottom-carousel').slick({
           centerMode: true,
           centerPadding: '60px',
           slidesToShow: 4,
