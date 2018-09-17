@@ -733,6 +733,15 @@
          <!--Approach-->
          <!-- /Protfolio--> 
          <!-- /Gallery-->
+		 <script>
+	var RotateCarousel = function(){
+		$('.carousel').slick({
+			autoplay: true,
+			autoplaySpeed: 2000,
+			slidesToScroll: 1
+		});
+	};
+	</script>
          <section id="clients" class="ps-section burger border-bottom">
             <div class="container">
                <div class="row">
@@ -747,7 +756,13 @@
                   <!--/col-4-->
                   <div class="col-lg-8 client_list">
                     <div class="row"> 
-                      <div class="carousel">
+					<div class="col-md-12">
+						<div class="carousel-header">
+							<button onclick="RotateCarousel()" name="btnRotateCarousel" value="Rotate">Rotate</button> 
+						</div>
+					</div>
+					<div class="col-md-12">
+                      <div class="carousel top-carousel" style="width: 100%">
                         <div class="clients-inner">
                           <div class="clients_img">
                             <img alt="Acer"  class=" mr-sm-3 media-object client-img" src="images/Clients/Acer Logo.png">
@@ -789,7 +804,9 @@
                             </div>
                           </div>
                       </div>
-                      <div class="carousel">
+					  </div>
+					  <div class="col-md-12">
+                      <div class="carousel bottom-carousel">
                       <div class="clients-inner">
                           <div class="clients_img">
                             <img alt="Dyson" class=" mr-sm-3 media-object client-img" src="images/Clients/Dyson Logo.png">
@@ -831,6 +848,7 @@
                             </div>
                           </div>
                     </div>
+					</div>
                     </div>
                   </div>
                   <!--/col-8-->
@@ -941,15 +959,18 @@
       <script  src='js/jquery.mixitup.min.js?ver=20151215'></script>
       <script  src='js/modernizr.min.js'></script>
       <script  src='js/main.js'></script>
-      <script type="text/javascript" src="slick/slick.min.js"></script>
 	  <script src="js/plugins.js"></script>
     <script src="js/polygons.js"></script>
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+	  
     <script type="text/javascript">
       $(document).ready(function(){
         $('.carousel').slick({
           centerMode: true,
           centerPadding: '60px',
-          slidesToShow: 3,
+          slidesToShow: 4,
           responsive: [
             {
               breakpoint: 768,
@@ -973,5 +994,7 @@
         });
       });
     </script>
+	
+	
    </body>
 </html>

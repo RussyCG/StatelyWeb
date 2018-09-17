@@ -2312,3 +2312,10 @@ ul.footer-social a:hover {
     padding: 7em 0;
   }
 }
+/*--------------------------------------------------------------
+# Slick Override
+--------------------------------------------------------------*/
+
+.slick-prev, .slick-next{
+	display: none !important;
+}
