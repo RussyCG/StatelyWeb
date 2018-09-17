@@ -908,7 +908,8 @@ p.site-title a {
   position: relative;
 }
 .banner-text h1::after {
-  background-color: #ec008c;
+  display:none!important;
+  /* background-color: #ec008c;
   content: "";
   display: inherit;
   height: .08em;
@@ -917,7 +918,7 @@ p.site-title a {
   position: relative;
   top: 0;
   transform: none;
-  width: .7em;
+  width: .7em; */
 }
 
 /*----------------------Banner Text----------------------------*/

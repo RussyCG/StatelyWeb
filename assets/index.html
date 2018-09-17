@@ -18,7 +18,10 @@
       <!-- main css-->
       <link rel="icon" href="logo.png" type="image/png">
       <!--Favicon icon-->
-	  
+
+      <!---Slick (Carousel)-->
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	  <!-- Global site tag (gtag.js) - Google Analytics -->
 		<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123021824-1"></script>
 		<script>
@@ -42,7 +45,14 @@
 			
 			visibleApproachItems.push(idToShow);
 		}
-	  </script>
+    </script>
+     <!-- <script type="text/javascript">
+      $(document).ready(function(){
+        $('.your-class').slick({
+          setting-name: setting-value
+        });
+      });
+    </script> -->
    </head>
    <body class="image-template">
 	<div class="preloader"><div class="loader-slice"></div></div>
@@ -382,28 +392,28 @@
                            </div>
                         </div>
                         <!--/team item-->
-                        <div class="col-lg-4 col-sm-4  mb5 our-team">
+                        <!-- <div class="col-lg-4 col-sm-4  mb5 our-team">
                            <div class="team-inner">
-                              <!--<ul class="social">
-                                 <!-- team socials
-                                 <!--<li><a  href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                              <ul class="social">
+                                 team socials
+                                <li><a  href="javascript:;"><i class="fa fa-twitter"></i></a></li>
                                  <li><a  href="https://www.linkedin.com/in/lisatiranti/"><i class="fa fa-linkedin"></i></a></li>
                               </ul>-->
-                              <div class="team_img">
-                                 <img src="images/LisaTiranti.webp" alt="Lisa Tiranti" /><!-- member image -->
-                              </div>
+                              <!-- <div class="team_img">
+                                 <img src="images/LisaTiranti.webp" alt="Lisa Tiranti" />member image -->
+                              <!-- </div>
                               <div class="team-content text-center">
                                  <h3 class="title">Lisa Tiranti</h3>
                                  <span>Content Specialist</span>
-                                 <!--<a href="#expert_modal" class="team_modal_link link-item" data-toggle="modal">
-                                    <!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
+                                 <a href="#expert_modal" class="team_modal_link link-item" data-toggle="modal">
+                                   <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
                                  <!--</a>-->
-                                 <aside class="d-none">
+                                 <!-- <aside class="d-none">
                                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                                  </aside>
-                              </div>
-                           </div>
-                        </div>
+                              </div> -->
+                           <!-- </div>
+                        </div> --> 
                         <!--/team item-->
 						<div class="col-lg-4 col-sm-4  mb5 our-team">
                            <div class="team-inner">
@@ -900,8 +910,7 @@
       <script  src='js/jquery.mixitup.min.js?ver=20151215'></script>
       <script  src='js/modernizr.min.js'></script>
       <script  src='js/main.js'></script>
-	  
-	  
+      <script type="text/javascript" src="slick/slick.min.js"></script>
 	  <script src="js/plugins.js"></script>
 	  <script src="js/polygons.js"></script>
    </body>
