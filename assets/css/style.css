@@ -43,12 +43,19 @@ Version: 1.0.0
   margin-bottom: 1.85em;
 }
 .clients-inner .clients_img {
-  max-height: 10em;
   position: relative;
   overflow: hidden;
   filter: grayscale(100%); 
   -webkit-filter: grayscale(100%);
 }
+
+@media (max-height: 100%) {
+  .clients-inner .clients_img  {
+    height:auto;
+    width: auto;
+  }
+}
+
 .clients-inner .clients_img:hover {
 filter: none;
 -webkit-filter: none;
@@ -1821,7 +1828,6 @@ ul.team_modal_social li {
 .client-img{
 	width: 30%;
 }
-
 .testimonial {
   padding: 3em;
 }
