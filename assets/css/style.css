@@ -9,6 +9,7 @@ Version: 1.0.0
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Carousel
 # Clients
 # Fonts
 # Variable-Site
@@ -25,6 +26,30 @@ Version: 1.0.0
 # Blog
 # Contact
 # High Resolution
+
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+.carousel-box{
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+.carousel-box:after {         /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  height: 100%;
+}
+.carousel-box img {
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */  
+  filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%);
+}
+.carousel-box img:hover{
+  filter: none;
+  -webkit-filter: none;
+}
 
 /*--------------------------------------------------------------
 # Clients
