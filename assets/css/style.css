@@ -50,22 +50,59 @@ Version: 1.0.0
   filter: none;
   -webkit-filter: none;
 }
-i.fa {
+.carousel-icon {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
   display: inline-block;
-  border-radius: 60px;
-  box-shadow: 0px 0px 2px #888;
-  padding: 0.3em 0.6em;
-  background-color: black;
-  color: white;
+  height: 5.5em;
+  outline: medium none;
+  overflow: visible;
+  position: relative;
+  text-indent: -9999rem;
+  width: 5.5em;
+  z-index: 2;
 }
-i.fa:hover{
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 0px 0px 2px #888;
-  padding: 0.3em 0.6em;
-  background-color: #ec008c;
+.carousel-icon img {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center center 0;
+  transition: transform 0.25s cubic-bezier(0, 0.6, 0.7, 1) 0s, -webkit-transform 0.25s cubic-bezier(0, 0.6, 0.7, 1) 0s;
+  width: 100%;
+  z-index: 5;
+}
+.carousel-icon::before {
+  background: #ec008c none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 23%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center 0;
+  transition: transform 0.25s cubic-bezier(0, 0.6, 0.7, 1) 0s, -webkit-transform 0.25s cubic-bezier(0, 0.6, 0.7, 1) 0s;
+  width: 23%;
+  z-index: -1;
+}
+.carousel-icon:hover:before {
+  transform: translate(-50%, -50%) scale(4) !important;
+}
+.carousel-icon:hover img {
+  transform: scale(0.75);
 }
 
+.carousel-icon.bottom:before {
+  transform: translate(100%, -50%)
+}
+
+.carousel-icon.right::before {
+  transform: translate(100%, -50%);
+}
 
 /*--------------------------------------------------------------
 # Clients
