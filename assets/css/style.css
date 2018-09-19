@@ -1131,10 +1131,10 @@ p.site-title a {
 }
 
 #service-info-title{
-	text-align: center;
+	/*text-align: center;*/
 }
 #service-info-title h2{
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 2em;
 	color: #0085a1;
 	margin-top: 2em;
@@ -1142,7 +1142,7 @@ p.site-title a {
 
 #service-info-post{
 	margin-top: 0.5em;
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 1.5em;
 }
 
@@ -1161,7 +1161,7 @@ p.site-title a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #dbdee0;
+	background-color: white;
 	position: absolute;
 	border-radius: 10px;
 	margin-left: 0.5em;
@@ -1169,7 +1169,7 @@ p.site-title a {
 
 #service-info-inner{
 	margin: 0.5em;
-	border: 1px solid white;
+	border: 1px solid black;
 	border-radius: 20px;
 	width: calc(100% - 1em);
 	height: calc(100% - 1em);
@@ -2396,4 +2396,8 @@ ul.footer-social a:hover {
 
 .slick-prev, .slick-next{
 	display: none !important;
+}
+
+.slick-rotate{
+	width: 100%;
 }
