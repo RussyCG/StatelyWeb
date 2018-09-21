@@ -1112,9 +1112,6 @@ p.site-title a {
   /*height: calc(33vh - 4em);*/
   
 }
-.service-item:last-child {
-  margin-bottom: 0;
-}
 .service-item .card {
   border: none;
   background: #dbdee0;
