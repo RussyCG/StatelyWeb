@@ -698,6 +698,14 @@ span.cat-links a {
   vertical-align: unset;
 }
 
+@media only screen and (min-width: 1200px){
+  .custom-logo-link img {
+  max-width: 100%;
+  max-height: 5em;
+  width: auto;
+}
+}
+
 .site-logo a {
   color: #ec008c;
   font-family: BebasNeus;
