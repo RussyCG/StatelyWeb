@@ -1141,15 +1141,15 @@ p.site-title a {
 }
 #service-info-title h2{
 	/*text-align: center;*/
-	font-size: 2em;
+	/*font-size: 2em;*/
 	color: #0085a1;
-	margin-top: 2em;
+	/*margin-top: 2em;*/
 }
 
 #service-info-post{
-	margin-top: 0.5em;
-	/*text-align: center;*/
-	font-size: 1.5em;
+	/*margin-top: 0.5em;
+	text-align: center;*/
+	font-size: 0.75em;
 }
 
 #service-info-icon{
@@ -1182,7 +1182,7 @@ p.site-title a {
 }
 
 #service-info-content{
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 #service-info-close{
@@ -1193,8 +1193,8 @@ p.site-title a {
 }
 
 #service-info-close span{
-	font-size: 2em;
-	font-weight: bold;
+	/*font-size: 2em;
+	font-weight: bold;*/
 }
 
 .card-content .row .title{

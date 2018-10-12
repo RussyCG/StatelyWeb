@@ -275,15 +275,12 @@
 					 <!--/row-->
 					 <div id="service-info" class="row" style="display: none;">
 					<div id="service-info-inner">
-						<div id="service-info-close" onclick="HideServiceInfo()">
-							<span>X</span>
-						</div>
-						
-						<div id="service-info-content">
+					<div class="row">
+						<div class="col-md-11" id="service-info-content">
 							<div class="row">
-								<div class="col-md-1"></div>
+								<div class="col-md-2"></div>
 							
-								<div id="service-info-icon" class="col-md-3">
+								<!--<div id="service-info-icon" class="col-md-3">
 								
 								</div>
 								
@@ -293,14 +290,21 @@
 								
 								<div class="col-md-1"></div>
 								
-								<div class="col-md-2"></div>
+								<div class="col-md-2"></div>-->
 								
-								<div id="service-info-post" class="col-md-8">
+								<div id="service-info-post" class="col-md-10">
 								
 								</div>
 								
-								<div class="col-md-2"></div>
-							<div>
+								<!--<div class="col-md-2"></div>-->
+							</div>
+						</div>
+						
+						<div class="col-md-1" id="service-info-close" onclick="HideServiceInfo()">
+							<span>X</span>
+						</div>
+						
+						
 						</div>
 					</div>
 				</div>
@@ -313,12 +317,22 @@
 					$('#service-info').fadeIn();
 					
 					var div = document.getElementById(idOfDiv);
-					var title = div.getElementsByClassName('title')[0].innerHTML;
+					//var title = div.getElementsByClassName('title')[0].innerHTML;
 					var post = div.getElementsByClassName('post')[0].innerHTML;
-					var icon = div.getElementsByClassName('card-icon')[0].innerHTML;
-					document.getElementById('service-info-title').innerHTML = "<h2>" + title + "</h2>";
+					//var icon = div.getElementsByClassName('card-icon')[0].innerHTML;
+					//document.getElementById('service-info-title').innerHTML = "<h2>" + title + "</h2>";
 					document.getElementById('service-info-post').innerHTML = "<p>" + post + "</p>";
-					document.getElementById('service-info-icon').innerHTML = icon;
+					//document.getElementById('service-info-icon').innerHTML = icon;
+					
+					var bodyRect = document.getElementsByClassName("service-list")[0].getBoundingClientRect();
+					var elemRect = div.getBoundingClientRect();
+					var topoffset = elemRect.top - bodyRect.top;
+					var leftoffset = elemRect.left - bodyRect.left;
+					
+					document.getElementById('service-info').style.width = "calc(" + div.offsetWidth + "px - 1vw)";
+					document.getElementById('service-info').style.top = topoffset + "px";
+					document.getElementById('service-info').style.height = div.offsetHeight + "px";
+					document.getElementById('service-info').style.left = leftoffset + "px";
 				};
 				</script>
                <!--/row-->
