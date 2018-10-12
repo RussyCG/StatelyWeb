@@ -137,11 +137,12 @@ Version: 1.0.0
 .clients-inner .clients_img:hover {
 filter: none;
 -webkit-filter: none;
+height: 130px !important;
 }
 .clients-inner .clients_img:after {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 130px !important;
   background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
   bottom: -100%;
