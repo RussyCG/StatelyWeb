@@ -694,7 +694,7 @@ span.cat-links a {
 .custom-logo-link img {
   width: 100%;
   height: auto;
-  /*max-height: 1.5em;*/
+  max-height: 1.6em;
   object-fit: cover;
   vertical-align: unset;
 }
@@ -1133,7 +1133,7 @@ p.site-title a {
   font-size: 1.25em;
 }
 .service-item .card .card-icon {
-  width: 4em;
+  width: 10em;
 }
 
 #service-info-title{

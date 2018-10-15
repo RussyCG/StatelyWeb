@@ -314,6 +314,10 @@
 				};
 				
 				var ShowServiceInfo = function(idOfDiv){
+          if($('#service-info').is(":visible")==true){
+            $('#service-info').fadeOut();
+          }
+          else{
 					$('#service-info').fadeIn();
 					
 					var div = document.getElementById(idOfDiv);
@@ -333,6 +337,7 @@
 					document.getElementById('service-info').style.top = topoffset + "px";
 					document.getElementById('service-info').style.height = div.offsetHeight + "px";
 					document.getElementById('service-info').style.left = leftoffset + "px";
+          }
 				};
 				</script>
                <!--/row-->
