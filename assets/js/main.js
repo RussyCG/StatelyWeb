@@ -135,26 +135,7 @@ jQuery(document).ready(function ($) {
 }); // Main document ready END
 
 /*--------------------------- 7.Portfolio Dynamic modal JS --------------------*/
-$(".port-link").on('click', function (e) {
-	$(this).closest('.portfolio-item').addClass('active');
-	var imgsrc = $(this).closest('.portfolio-inner').find(".portfolio_img").css('background-image'),
-		imgsrc = imgsrc.replace('url(','').replace(')','');
-		port_logo = $(this).closest('.portfolio-inner').find("img.port_logo").attr('src');
-	port_title = $(this).closest('.portfolio-inner').find("span.port-title").html(),
-		port_tag = $(this).closest('.portfolio-inner').find(".port_tag").html(),
-		port_content = $(this).closest('.portfolio-inner').find(".port_content").html(),
-		$('#port_img').css('background-image', 'url('+ imgsrc +')');
-	$('#port_modal_logo').attr('src', port_logo);
-	$('.port_modal h3').html(port_title);
-	$('.port_modal small').html(port_tag);
-	$('.port_modal #port-content').html(port_content);
-	$('.port_modal').fadeIn(300);
-});
-$(".modal_close_btn").on('click', function () {
-	$('.port_modal').fadeOut(200);
-	$('.portfolio-item.active').removeClass('img_active');
-});
-//Portfolio Dynamic modal END
+
 
 /*--------------------------------- 8.Contact Form Submit Js -----------------------*/
 $(function () {

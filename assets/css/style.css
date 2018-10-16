@@ -1177,7 +1177,7 @@ p.site-title a {
 
 #service-info-inner{
 	margin: 0.5em;
-	border: 1px solid black;
+	border: 0px solid black;
 	border-radius: 0px;
 	width: calc(100% - 1em);
 	height: calc(100% - 1em);
@@ -2408,4 +2408,16 @@ ul.footer-social a:hover {
 
 .slick-rotate{
 	width: 100%;
+}
+
+/* @media (max-width: 849px) {
+  .portfolio-carousel {
+    display: none !important;
+  }
+} */
+
+@media (min-width: 850px) {
+  .portfolio-carousel {
+    top: 50%; transform: translateY(-50%);
+  }
 }
