@@ -130,7 +130,7 @@
                      <ul class="nav menu ">
                         <!-- menu list -->
                         <li class=""><a class="nav-link" href="#services">Services</a></li>
-                        <!--<li class=""><a class="nav-link" href="#portfolio">Portfolio</a></li>-->
+                        <li class=""><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class=""><a class="nav-link" href="#about">About</a></li>
                         <li class=""><a class="nav-link" href="#approach">Approach</a></li>
                         <li class=""><a class="nav-link" href="#clients">Clients</a></li>
@@ -286,41 +286,6 @@
                         </div>
                       </div>
                     </div>
-                    <script>
-                      
-
-
-                    var HideServiceInfo = function(){
-                      $('#service-info').fadeOut();
-                    };
-                    
-                    var ShowServiceInfo = function(idOfDiv){
-                      if($('#service-info').is(":visible")==true){
-                        $('#service-info').fadeOut();
-                      }
-                      else{
-                      $('#service-info').fadeIn();
-                      
-                      var div = document.getElementById(idOfDiv);
-                      //var title = div.getElementsByClassName('title')[0].innerHTML;
-                      var post = div.getElementsByClassName('post')[0].innerHTML;
-                      //var icon = div.getElementsByClassName('card-icon')[0].innerHTML;
-                      //document.getElementById('service-info-title').innerHTML = "<h2>" + title + "</h2>";
-                      document.getElementById('service-info-post').innerHTML = "<p>" + post + "</p>";
-                      //document.getElementById('service-info-icon').innerHTML = icon;
-                      
-                      var bodyRect = document.getElementsByClassName("service-list")[0].getBoundingClientRect();
-                      var elemRect = div.getBoundingClientRect();
-                      var topoffset = elemRect.top - bodyRect.top;
-                      var leftoffset = elemRect.left - bodyRect.left;
-                      
-                      document.getElementById('service-info').style.width = "calc(" + div.offsetWidth + "px - 1vw)";
-                      document.getElementById('service-info').style.top = topoffset + "px";
-                      document.getElementById('service-info').style.height = div.offsetHeight + "px";
-                      document.getElementById('service-info').style.left = leftoffset + "px";
-                      }
-                    };
-                    </script>
                     <!--/row-->
                   </div>
                   <!--/col-8-->        	
@@ -330,7 +295,204 @@
             <!--/container-->
          </section>
          <!-- /services -->
-		 <!-- Insert portfolio here -->
+     <!-- Insert portfolio here -->
+     <section id="portfolio" class="ps-section burger border-bottom">
+      <div class="container">
+         <div class="row flex-item-stretch">
+            <!-- row start -->
+            <div class="col-lg-4">
+               <div class="page-head mb-5">
+                  <span class="page-caption">Portfolio</span>
+                  <h2 class="mt-3">We make things you&#039;ll love</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <span class="portfolio_tabs_toogle d-md-none" data-active="all"></span>
+                  <ul class="portfolio-tabs clearfix" >
+                     <li class="filter active" data-filter="*"> All </li>
+                     <li class="filter" data-filter=".exhs">Exhibition Stands</li>
+                     <!--<li class="filter" data-filter=".ux-ui-design">UX/UI Design</li>-->
+                     <li class="filter" data-filter=".pubh">Public Hospitality</li>
+                     <li class="filter" data-filter=".bi">Brand Identity</li>
+                     <li class="filter" data-filter=".web">Web Development</li>
+                  </ul>
+               </div>
+            </div>
+            <!--/col-4-->
+            <div class="col-lg-8">
+               <div class="portfolio-list align-items-center d-flex flex-wrap">
+                  <div class="portfolio-item  item col-md-4 col-sm-6 exhs ">
+                     <div class="portfolio-inner">
+                        <div class="portfolio_img" style="background-image: url(images/Portfolio/Project_1_Puma_Energy.jpg);"></div>
+                        <div class="portfolio-content d-flex justify-content-center align-items-center">
+                           <span class="port-title">Main Hospitality</span>
+                           <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>
+                           <img src="images/Portfolio/Project 1 Thumb.jpg" class="port_logo d-none" alt="Starbucks" >							
+                        </div>
+                        <div class="d-none port_tag">Exhibition Stands</div><!-- portfolio tag -->
+                        <div class="d-none port_content">
+                           <p>Puma Energy is a newer entry to the South African market. Through this stand they wanted to increase their recall and recognition with a long-term aim of becoming top-of-mind when thinking about fuel services. </p>
+                           <ul>
+                              <li>Custom Stand</li>
+                              <li>6x22 </li>
+                              <li>Realistic look and feel of a petrol station</li> 
+                              <li>Aimed at recall and recognition for the brand</li>
+                              <li>Easy walkthrough and touch points with the public</li>  
+                              <li>Seating and shop inside - ‘OK Express’</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!--/portfolio-item-->
+                  <div class="portfolio-item  item col-md-4 col-sm-6 pubh ">
+                     <div class="portfolio-inner">
+                        <div class="portfolio_img" style="background-image: url(images/Portfolio/Project_2_Puma_Energy_1.jpg);"></div>
+                        <div class="portfolio-content d-flex justify-content-center align-items-center">
+                           <span class="port-title">Public Hospitality</span>
+                           <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>
+                           <img src="images/Portfolio/Project 2 Thumb.jpg"  class="port_logo d-none" alt="Starbucks" >							
+                        </div>
+                        <div class="d-none port_tag">Exhibition Stands </div><!-- portfolio tag -->
+                        <div class="d-none port_content">
+                           <p>Puma Energy – with the same aim in mind as the main hospitality stand yet with this stand they wanted to attract both families as well as clients. The track was there to attract kids and families whilst the truck part was used for VIP business clients who were aiming at finding strategic partnerships. </p>
+                           <ul>
+                              <li>Custom Stand & rebranded rig</li>
+                              <li>Realistic track feel - Kyalami Motoring Show</li>
+                              <li>VIP Area</li>
+                              <li>Unique User Experience</li>
+                              <li>Family orientated</li> 
+                              <li>Casual seating deck with a view of the slick-track</li>
+                            </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!--/portfolio-item-->
+                  <div class="portfolio-item  item col-md-4 col-sm-6 exhs ">
+                     <div class="portfolio-inner">
+                        <div class="portfolio_img" style="background-image: url(images/Portfolio/Project_3_Acer_Game_On.jpg);"></div>
+                        <div class="portfolio-content d-flex justify-content-center align-items-center">
+                           <span class="port-title">Acer & Microsoft’s ‘Game On EduTech’</span>
+                           <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                           <img src="images/Portfolio/Project 3 Thumb.jpg"  class="port_logo d-none" alt="Starbucks" >							
+                        </div>
+                        <div class="d-none port_tag">Exhibition Stands</div><!-- portfolio tag -->
+                        <div class="d-none port_content">
+                           <p>Acer & Microsoft showcased their educational products on the EduTech 2018 exhibition where all the big and small names were present doing their part to increase interest with education technology. This was done by using the game Minecraft to entice their audience. </p>
+                           <ul>
+                                <li>Custom Stand</li>
+                                <li>6x4</li>
+                                <li>Virtual Reality gaming space</li>
+                                <li>Expo orientated - EduTech</li>
+                                <li>Branding – immediate brand recognition with purpose ‘Acer for Education’</li>
+                                <li>Multiple contact points to capture the public</li>
+                                <li>Computers available for demonstrations</li>
+                            </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!--/portfolio-item-->
+                  <div class="portfolio-item  item col-md-4 col-sm-6 bi ">
+                     <div class="portfolio-inner">
+                        <div class="portfolio_img" style="background-image: url(images/Portfolio/Project_4_The_Blonde_Dude.jpg);"></div>
+                        <div class="portfolio-content d-flex justify-content-center align-items-center">
+                           <span class="port-title">TBD</span>
+                           <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                           <img src="images/Portfolio/Project 4 Thumb.jpg"  class="port_logo d-none" alt="Starbucks" >							
+                        </div>
+                        <div class="d-none port_tag">Brand Identity</div><!-- portfolio tag -->
+                        <div class="d-none port_content">
+                           <p>The Blonde Dude identity showcases a diverse brand capable of capturing anything on film. This videographer’s brand is directly derived from his own personality, making it that much more memorable. </p>
+                           <ul>
+                              <li>Rectangular logo allowing for simple location placement</li>
+                              <li>Uni-tone colouring for light/dark/colourful images or footage with a distinct gold-yellow hue</li>
+                              <li>Minimalistic and font orientated</li> 
+                              <li>Videography includes sensory experience of sight and sound, complementing the brand through-and-through</li>
+                            </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!--/portfolio-item-->
+                  <div class="portfolio-item  item col-md-4 col-sm-6 bi web ">
+                     <div class="portfolio-inner">
+                        <div class="portfolio_img" style="background-image: url(images/portfolio-image.png);"></div>
+                        <div class="portfolio-content d-flex justify-content-center align-items-center">
+                           <span class="port-title">ITWF</span>
+                           <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                           <img src="images/port-logo.png"  class="port_logo d-none" alt="Starbucks" >					
+                        </div>
+                        <div class="d-none port_tag">Brand Identity | Web Development </div><!-- portfolio tag -->
+                        <div class="d-none port_content">
+                           <p>IT Without Frontiers is the thought platform for Belgium Campus ITVersity, South Africa’s single-faculty University specialising solely in the ICT studies. They produce just over 8% of the country’s ICT graduates yearly. The purpose is to start conversions at the top-level and engage with interested stakeholders looking to sponsor students all whilst generating student leads through subscriptions to the platform – targeting through generated content.</p>
+                           <ul>
+                              <li>Naming encouraging innovation across the globe but implementing solutions locally - Adopting the ‘GloCol’ outlook</li>
+                              <li>Clean and font based identity with animations for immediate recognition and recall</li>
+                              <li>Minimalistic with a modern look and feel</li>
+                              <li>Clear messaging and defined tone-of-voice</li>
+                            </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!--/portfolio-item-->
+                  <div class="portfolio-item  item col-md-4 col-sm-6 exhs ">
+                     <div class="portfolio-inner">
+                        <div class="portfolio_img" style="background-image: url(images/Portfolio/Project_3_Acer_Game_On.jpg);"></div>
+                        <div class="portfolio-content d-flex justify-content-center align-items-center">
+                           <span class="port-title">Acer ‘Purco SA’</span>
+                           <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>	
+                           <img src="images/Portfolio/Project 3 Thumb.jpg"  class="port_logo d-none" alt="Starbucks" >					
+                        </div>
+                        <div class="d-none port_tag">Exhibition Stands</div><!-- portfolio tag -->
+                        <div class="d-none port_content">
+                           <p> Acer showcased their educational products in the 2018 Purco SA expo. They used an open custom stand with various touch points, together with VR gaming to attract the public. This was done by using the game Minecraft to entice their audience. </p>
+                           <ul>
+                              <li>Custom Stand</li>
+                              <li>4x3</li>
+                              <li>Virtual Reality gaming space</li>
+                              <li>Expo orientated - EduTech</li>
+                              <li>Branding – immediate brand recognition with purpose ‘Acer for Education’</li>
+                              <li>Multiple contact points to capture the public</li>
+                              <li>Computers available for demonstrations</li>
+                          </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!--/portfolio-item-->
+               </div>
+               <!--/portfolio-list-->
+            </div>
+            <!--/col-8-->
+         </div>
+         <!-- /row -->
+      </div>
+      <!-- /container -->
+      <!-- Portfolio Modal HTML -->
+      <div  class="modal port_modal" id="portfolioModal"  role="dialog" >
+         <a href="javascript:;" class="dismiss-item1 modal_close_btn" data-dismiss="modal" aria-label="Close"></a>
+         <div class="row align-items-stretch port-popup slideshow flex-column flex-sm-row">
+            <!-- row start -->
+            <div class="col-lg-6 p-0">
+               <div id="port_img" style="background-image: url(images/starbucks.jpg);"  ></div>
+            </div>
+            <div class="col-lg-6 p-0">
+               <div class="d-flex f justify-content-stretch h-100">
+                  <div class="content flex-column justify-content-center d-flex  ">
+                     <img src="images/no-image.png" id="port_modal_logo"  alt="Starbucks" >
+                     <h3 class="mt-3 text-capitalize">Starbucks</h3>
+                     <small class="text-muted">UX/UI Design</small>
+                     <div class="mt-3" id="port-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul>
+                           <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</li>
+                           <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                           <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Portfolio Modal HTML END-->
+   </section>
+   <!-- /Protfolio--> 
 		 <!-- Don't forget menu item -->
          <section id="about" class="ps-section burger border-bottom">
             <div class="container">
@@ -937,12 +1099,6 @@
             fadeOut($(this), false);
           }
         });
-        // You saw what happend I only clicked once
-        //Yeah I saw I understand now sorry just tired tonight you dont wanna know why
-        // Maybe someday you can tell me why
-        //perfect, but now is evevrything ok on the page
-        // Now it is
-        //cool please disconnect gotta get home still at my grans OK
       });
       function fadeIn(sender) {
         var post = $(sender).find('.post');

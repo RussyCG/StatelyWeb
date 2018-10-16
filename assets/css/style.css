@@ -1167,10 +1167,12 @@ p.site-title a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: white;
 	position: absolute;
-	border-radius: 10px;
-	margin-left: 0.5em;
+  margin-left: 0.5em;
+  border: none;
+  background: #dbdee0;
+  padding: 1em;
+  cursor:  pointer;
 }
 
 #service-info-inner{
