@@ -1347,6 +1347,10 @@ p.site-title a {
   margin-top: 0px;
 }
 
+.portfolio-inner span.port-project-title {
+  display: none;
+}
+
 .portfolio-content {
   height: 100%;
   position: absolute;
