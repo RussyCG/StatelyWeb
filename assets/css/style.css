@@ -1124,12 +1124,13 @@ p.site-title a {
   
 }
 .service-item .card {
-  border: none;
-  background: #dbdee0;
-  padding: 1em;
-  /*min-height: 275px;*/
-  height: 100%;
-  cursor:  pointer;
+    border: none;
+    background: #dbdee0;
+    padding: 1em;
+    min-height: 50px;
+    overflow-y: hidden;
+    height: 120px;
+    cursor: pointer;
 }
 .service-item .card h3 {
   font-size: 1.25em;
