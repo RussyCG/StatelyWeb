@@ -1207,7 +1207,8 @@ p.site-title a {
 }
 
 .post p{
-	display: none;
+  display: none;
+  margin-left: 5px;
 }
 
 @media (max-width: 767px) {
