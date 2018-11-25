@@ -334,7 +334,9 @@
                 <li class="filter" data-filter=".exhs">Exhibition Stands</li>
                 <!--<li class="filter" data-filter=".ux-ui-design">UX/UI Design</li>-->
                 <!--<li class="filter" data-filter=".pubh">Public Hospitality</li>-->
-                <li class="filter" data-filter=".bi">Brand Identity</li>
+                <li class="filter" data-filter=".bi">Brand Identity</li> 
+                <li class="filter" data-filter=".pho">Photography</li>
+                <li class="filter" data-filter=".vid">Videography</li>
                 <!-- <li class="filter" data-filter=".web">Web Development</li> -->
               </ul>
             </div>
@@ -646,6 +648,82 @@
                           <li>Multiple contact points to capture the public</li>
                           <li>Meeting area for formal discussions</li>
                         </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/portfolio-item-->
+                    <!----URL Changes-->
+                <script>
+                    function update_urlDG(url) {
+                      window.history.pushState("object or string", "Title", "/portfolio/DaytonaGroup");
+                    }
+                    </script>
+                    <!----URL Changes-->
+                  <!--/portfolio-item-->
+                <div class="portfolio-item  item col-md-4 col-sm-6 pho " onclick="update_urlDG();">
+                  <div class="portfolio-inner">
+                    <div class="portfolio_img" style="background-image: url('images/Portfolio/daytona/daytona series 2.jpg');"></div>
+                    <div class="portfolio-content d-flex justify-content-center align-items-center">
+                      <span class="port-title">Daytona Group</span>
+                      <span class="port-project-title">Daytona Group</span>
+                      <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>
+                      <img src="images/Portfolio/daytona/daytona series 2.jpg" class="port_logo d-none" alt="Starbucks">
+                      <div class="portfolio_images d-none" style="max-width:767px; max-height:750px;">
+                        <img src="/images/Portfolio/daytona/daytona series 3.jpg" style="max-width:767px; max-height:750px;">
+                        <img src="/images/Portfolio/daytona/daytona series 4.jpg" style="max-width:767px; max-height:750px;">
+                        <img src="/images/Portfolio/daytona/Senna-1.jpg" style="max-width:767px; max-height:750px;">
+                        <img src="/images/Portfolio/daytona/Senna-4.jpg" style="max-width:767px; max-height:750px;">
+                        <!-- <img src="/images/Portfolio/daytona/Senna-7.jpg"> -->
+                        <img src="/images/Portfolio/daytona/Senna-8.jpg" style="max-width:767px; max-height:750px;">
+                        <img src="/images/Portfolio/daytona/Senna light trail_5.jpg" style="max-width:767px; max-height:750px;">
+                      </div>
+                    </div>
+                    <div class="d-none port_tag">Photography </div><!-- portfolio tag -->
+                    <div class="d-none port_content">
+                      <p>South African supplier of the world’s luxurious supercar marques, Daytona Group, celebrated their 
+                        10 years in the industry with style, glamour and five new state-of-the art supercars at the courtyard 
+                        in Sandton.</p>
+                        <br/>
+                        <p>
+                            Together with its 10th year anniversary, the group was also celebrating the centenary birthday of 
+                            legendary British motoring icon, Aston Martin and the 50th birthday of Formula 1 competitor 
+                            McLaren.
+                        </p>
+                      <!-- <ul>
+                        <li>Custom Stand</li>
+                        <li>14x4</li>
+                        <li>Animal health orientated, as per brand</li>
+                        <li>Multiple contact points to capture the public</li>
+                        <li>Meeting area for formal discussions</li>
+                      </ul> -->
+                    </div>
+                  </div>
+                </div>
+                <!--/portfolio-item-->
+                <!----URL Changes-->
+                <script>
+                    function update_urlJL(url) {
+                      window.history.pushState("object or string", "Title", "/portfolio/JeremyLoops");
+                    }
+                    </script>
+                    <!----URL Changes-->
+                 <!--/portfolio-item-->
+                 <div class="portfolio-item  item col-md-4 col-sm-6 vid " onclick="update_urlJL();">
+                    <div class="portfolio-inner">
+                      <div class="portfolio_img" style="background-image: url('images/Portfolio/Thumbs/jeremyloops thumb.jpg');"></div>
+                      <div class="portfolio-content d-flex justify-content-center align-items-center" style="height: 500px!important;">
+                        <span class="port-title">Jeremy Loops</span>
+                        <span class="port-project-title">Jeremy Loops</span>
+                        <a href="#portfolioModal" class="link-item port-link" data-toggle="modal"></a>
+                        <img src="images/Portfolio/Thumbs/jeremyloops thumb.jpg" class="port_logo d-none" alt="Starbucks">
+                        <div class="portfolio_images d-none" >
+                            <iframe id="video_loops" src="https://player.vimeo.com/video/302390946" width="640" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        
+                            </div>
+                      </div>
+                      <div class="d-none port_tag">Videography </div><!-- portfolio tag -->
+                      <div class="d-none port_content">
+                       
                       </div>
                     </div>
                   </div>
@@ -1374,8 +1452,8 @@
 
     function openPortfolioModal(sender, modelId) {
       sender.closest('.portfolio-item').addClass('active');
-      var images = sender.closest('.portfolio-inner').find('.portfolio_images > img');
-      $(images).each(function (e) {
+      var kids = sender.closest('.portfolio-inner').find('.portfolio_images').children();
+      $(kids).each(function (e) {
         var div = $('<div>').append($(this).clone()).html()
         $(modelId + ' .portfolio-carousel').append(div);
       });

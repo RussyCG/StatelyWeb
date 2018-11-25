@@ -2483,3 +2483,7 @@ ul.footer-social a:hover {
     top: 50%; transform: translateY(-50%);
   }
 }
+
+#video_loops{
+  height:500px!important;
+}
